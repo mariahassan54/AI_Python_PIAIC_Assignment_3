@@ -1,0 +1,307 @@
+Q1. All of the following terms are related dictionaries except index beacause we don't normally index a dictionary like lists because elements of a dictionary don't follow any specific order but indirectly we can say we index them through their keys.
+
+Q2. False
+
+Q3. False: we can only specify key in the brackets to access its value
+
+Q4. d : we get a keyerror
+
+Q5. b
+
+Q6. b
+
+Q7. a, b
+
+Q8. b
+
+Q11. 1)  ["Feb", "Apr", "Mar"]
+
+     2)  ["Mar", "May", "Jun", "Jul", "Aug", "Jan"]
+
+      
+     3)  ["Jun", "Jul", "Aug", "Jan"]
+
+     4)  ["Apr" , "May", "Jul", "Jan"]
+
+
+     5)  ["Apr","Mar", "May", "Jun", "Jul", "Aug", "Jan"]
+
+
+     6)  ['Apr', 'Mar', 'May', 'Jun', 'Jul', 'Aug']
+
+
+     7)  ['Jan','Jul', 'May','Apr']
+
+
+     8)  ['Feb','Apr','Mar','May','Jun']
+
+
+    
+Q12. 3)
+
+Q13. 1)
+
+Q14. 1)
+
+Q15. 1) bool
+  
+     2) string
+
+     3) integer
+
+     4) float 
+
+
+Q16. 2)
+
+Q17. 4)
+
+Q18. 1) 0
+
+     2) 2.0
+
+     3) 2
+
+     4) 2
+
+
+Q19. a) for i in range(2):
+           for i in range(3)
+
+              print(x[i][j])
+
+
+Q20. 3)
+
+Q21. b)
+
+Q22. a)
+
+Q23. False, False, True
+
+Q24. 11.33333
+
+Q25. output is:
+
+     name is: Ali Marks: 44.5
+
+    EXplanation:
+
+    When one parameter has asterick on it, it means that a list of arguments will be passed to the function. The sum method of a list adds all the elements present in a list and dividing that sum by the len method (which gives the total elements present in a list) gives the average marks.
+
+To remove errors simply pass the name argument as a keyword argument rather tha positional argument, that is,  avg ( 5 , 9 , 20, 34, 87, 112 ,name = 'Ali' )
+
+
+Q26. line 1: defines a function display_result with the parameter list : winner,score and a parameter that will receive an unknown number of keyword arguments in the form of a dictionary
+
+     line 2: Will display "The winner was " and the value passed to the winner variable. The plus operator cantenates two strings
+
+     line 3: Will display "The score was " and the value passed to the score variable. The plus operator cantenates two strings.
+
+     line 4: Function display_result is called with the keyword argument "Manchester" passed to winner, another keyword argument "1-0" is passed to score and the dictionary {"overtime":"yes" , "injuries" : "none} was passed to other_info.
+
+
+     The output is : 
+
+     The winner was Manchester
+     The score was 1-0
+
+
+    If we remove one asterick then the only difference would be that other_info would be storing a tuple so inorder to store a list we would need to pass positional arguments rather than keyword arguments. Thus other_info wold have to be placed first in the parameter list like def display_result(*other_info, winner, score) because positional arguments are always passed before keyword arguments.
+
+
+   If we remove two stars then it will act like a single variable and we can only pass it one keyword argument. I we were to pass it a positional argument then we would have to place it at the very first position in the parameter list as def display_result(other_info, winner, score)
+
+Q27.  **otherinfo should be at the very end in paramter list beacuse optional arguments are placed at very end. This will remove the error and display the same output as in Q26. 
+
+
+     The output is : 
+
+     The winner was Manchester
+     The score was 1-0
+
+Q28. b
+
+Q29. c
+
+Q30. d
+
+Q31. Output: The loop never runs because we have written false in it so the condition will never be true so no matter what the value of i nothing will be displayed
+
+
+Q32. line 1: variable x is initialised with valye abcdef
+     line 2: variable i is initialised with value a
+     line 3: checks condition  if i is present in x which is true
+
+     line 4: this line shortens the tring by one character (slicing)
+     line 5: prints the value of i which is unchanged in each iteration
+
+    Loop output: a a a a a a 
+
+   the number of a's displayed is equal to numbr of characters in string as slicing reduces the string by one character and by the end of 6th iteraton string x is empty so the condition becomes false
+
+ if i is any value not present in string then the loop won't execute if it is any value like i = e
+then the output will be 
+
+ e e  
+
+if i = f
+
+output : f
+
+if i = b
+
+output : b b b b b
+
+
+Q33.   
+
+        
+
+Q34. iteration 1:
+
+           line 1: i = 0 true condition
+           line 2: if condition is false
+           line 3: not exceuted
+           line 4: else is true, prints 0
+           line 1: i is incremented to 1
+
+     iteration 2:
+           line 1: i is i range (true)
+           line 2: if condition is false
+           line 3: not exceuted
+           line 4: else is true, prints 1
+           line 1: i is incremented to 2
+
+
+    iteration 3:
+           line 1: i is i range (true)
+           line 2: if condition is false
+           line 3: not exceuted
+           line 4: else is true, prints 2
+           line 1: i is incremented to 3
+
+    iteration 2:
+           line 1: i is i range (true)
+           line 2: if condition is false
+           line 3: not exceuted
+           line 4: else is true, prints 3
+           line 1: i is incremented to 4
+
+
+    iteration 2:
+           line 1: i is i range (true)
+           line 2: if condition is false
+           line 3: not exceuted
+           line 4: else is true, prints 4
+           line 1: i is incremented to 5
+
+    iteration 2:
+           line 1: i is i range (true)
+           line 2: if condition is true
+           line 3: loop breaks
+           line 5,6: else not executed 
+
+
+    
+
+
+Q35. 48 
+
+Q36. output: 0
+
+    Explanation:i in the function is a local variable and any changes made to it would not be visible outside funtion hence 0 is printed
+
+
+Q40. output: class tuple
+     (2,3,4)
+
+     *two: is an optional paramter and will store the optional arguments as a tuple
+    while one is a simple parameter variable
+     type is used to show datatype of the varaible two
+      while print(two) simply displays the tuple
+
+
+Q41. output: class dict
+
+  **b means that any optional arguments passed to the finction will be stored as a dictionary hence datatype of b was displayed as dictionary.
+
+Q42.  iteration 1:
+
+         line 1: definition of function with parameters i and an empty list x
+
+
+         line 2 and 3 compiled
+
+         line 4: for loop from 0 to 2 (3 iterations and 3 is not included)
+
+         line 5: function call , i = 0 passed to function
+
+         back to line 1 : i given the value 0
+         line 2: list appended with 0
+         line 3: return list [0]
+         line 5 : prints list [0]
+        
+
+
+        iteration 2:
+
+            line 4: i incremented by 1 (i = 1) condition is true
+           line 5: function call , i= 1 passed to function
+m           line 1: definition of function with parameters i and an list x[0]
+
+          
+          back to line 1 : i given the value 1
+
+         line 2: appends 1 to list to get [0,1]
+         
+        
+         line 3: return list [0,1]
+         line 5 : prints list [0,1]
+         
+
+    
+
+        iteration 3:
+
+            line 4: i incremented by 1 (i = 2) condition is true
+           line 5: function call , i= 1 passed to function
+           line 1: definition of function with parameters i and an list x[0,1]
+
+          
+          back to line 1 : i given the value 1
+
+         line 2: appends 1 to list to get [0,1,2]
+         
+        
+         line 3: return list [0,1,2]
+         line 5 : prints list [0,1,2]
+         line 4: i incremented by 1 (i = 3) condition is false
+          loop breaks
+
+
+Q43.   brackets executed first (using PEMDAS)
+
+       3*3**2-4*3
+     
+       then exponents 
+  
+       3*9-4*3
+
+       then multiplication
+
+        
+       27-12 = 15
+
+Q44.  E
+
+Q45.  B,D
+
+
+
+
+            
+
+ 
+
+
